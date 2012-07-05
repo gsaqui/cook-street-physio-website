@@ -1,0 +1,10 @@
+.center{
+    margin: auto;
+    width: 400px;
+}
+.reset{
+    
+}
+.basic-health-information .ui-field-contain label.ui-slider{
+    width: 175px;
+}

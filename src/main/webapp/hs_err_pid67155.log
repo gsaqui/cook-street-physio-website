@@ -1,0 +1,98 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGBUS (0xa) at pc=0x000000010d222c96, pid=67155, tid=140735286946144
+#
+# JRE version: 7.0_04-b21
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (23.0-b21 mixed mode bsd-amd64 compressed oops)
+# Problematic frame:
+# J  com.google.appengine.repackaged.org.objectweb.asm.MethodWriter.visitInsn(I)V
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007ff891001000):  JavaThread "main" [_thread_in_Java, id=2093558112, stack(0x00007fff6b7ee000,0x00007fff6bfee000)]
+
+siginfo:si_signo=SIGBUS: si_errno=0, si_code=2 (BUS_ADRERR), si_addr=0x00000001101ff02c
+
+Registers:
+RAX=0x0000000000000001, RBX=0x0000000000000001, RCX=0x00000000a13da3b4, RDX=0x0000000000000001
+RSP=0x00007fff6bfe7670, RBP=0x0000000000000000, RSI=0x0000000000000001, RDI=0x00000000a13d9f9e
+R8 =0x0000000000000000, R9 =0x0000000000000001, R10=0x00000000000000d7, R11=0x000000061a0d0da0
+R12=0x00000001101ff000, R13=0x00007fff6bfe7720, R14=0x0000000110f2aee8, R15=0x00007ff891001000
+RIP=0x000000010d222c96, EFLAGS=0x0000000000010287, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007fff6bfe7670)
+0x00007fff6bfe7670:   00007fff6bfe76c0 0000000100000001
+0x00007fff6bfe7680:   00007fff6bfe7770 000000061a0cec30
+0x00007fff6bfe7690:   000000061a0cf308 00007fff000000b8
+0x00007fff6bfe76a0:   00007fff6bfe7770 000000010d209eac
+0x00007fff6bfe76b0:   000000061a0c3480 00000000000000bd
+0x00007fff6bfe76c0:   00007fff6bfe7770 000000010d209eac
+0x00007fff6bfe76d0:   000000061a0bb0c0 000000316bfe7728
+0x00007fff6bfe76e0:   00007fff6bfe7770 000000010d209eac
+0x00007fff6bfe76f0:   00007fff6bfe7770 000000010d12f806
+0x00007fff6bfe7700:   00007fff6bfe7770 000000010d12f806
+0x00007fff6bfe7710:   000000061a0c3438 000000010d12f806
+0x00007fff6bfe7720:   0000000000000001 000000061a0cf308
+0x00007fff6bfe7730:   00007fff6bfe7730 0000000110ef8d6c
+0x00007fff6bfe7740:   00007fff6bfe7998 0000000110efaeb0
+0x00007fff6bfe7750:   0000000110f4fb38 0000000110ef91f8
+0x00007fff6bfe7760:   00007fff6bfe7720 00007fff6bfe7980
+0x00007fff6bfe7770:   00007fff6bfe79e0 000000010d12f158
+0x00007fff6bfe7780:   000000061a0c3480 000000061a0c3438
+0x00007fff6bfe7790:   000000061a0c2f00 00000000000003b5
+0x00007fff6bfe77a0:   0000000000000000 0000000000000000
+0x00007fff6bfe77b0:   000000000000000a 0000000000000043
+0x00007fff6bfe77c0:   000000000000010c 0000000000000001
+0x00007fff6bfe77d0:   000000061a0cf9b8 00000000000000cb
+0x00007fff6bfe77e0:   0000000000000001 0000000000000000
+0x00007fff6bfe77f0:   0000000000000000 0000000000000000
+0x00007fff6bfe7800:   0000000000000000 0000000000000000
+0x00007fff6bfe7810:   0000000000000000 0000000000000000
+0x00007fff6bfe7820:   0000000000000000 0000000000000000
+0x00007fff6bfe7830:   0000000600000000 0000000600000000
+0x00007fff6bfe7840:   00000006000032b6 000000061a0cf588
+0x00007fff6bfe7850:   00000000000032ac 00000000000031d7
+0x00007fff6bfe7860:   00000000000000d5 0000000000000008 
+
+Instructions: (pc=0x000000010d222c96)
+0x000000010d222c76:   cc 0c 41 3b db 0f 83 d8 02 00 00 45 89 54 fc 0c
+0x000000010d222c86:   4c 63 d3 4d 8d 1c cc 8b 5c 24 08 43 88 5c 13 10
+0x000000010d222c96:   47 8b 5c c4 2c 85 f6 0f 84 fe 02 00 00 81 fb ca
+0x000000010d222ca6:   00 00 00 0f 83 e2 02 00 00 49 ba b0 5e ac 14 06 
+
+Register to memory mapping:
+
+RAX=0x0000000000000001 is an unknown value
+RBX=0x0000000000000001 is an unknown value
+RCX=0x00000000a13da3b4 is an unknown value
+RDX=0x0000000000000001 is an unknown value
+RSP=0x00007fff6bfe7670 is pointing into the stack for thread: 0x00007ff891001000
+RBP=0x0000000000000000 is an unknown value
+RSI=0x0000000000000001 is an unknown value
+RDI=0x00000000a13d9f9e is an unknown value
+R8 =0x0000000000000000 is an unknown value
+R9 =0x0000000000000001 is an unknown value
+R10=0x00000000000000d7 is an unknown value
+R11=0x000000061a0d0da0 is an oop
+[B 
+ - klass: {type array byte}
+ - length: 256
+R12=0x00000001101ff000 is an unknown value
+R13=0x00007fff6bfe7720 is pointing into the stack for thread: 0x00007ff891001000
+R14=0x0000000110f2aee8 is an oop
+{instance class} 
+ - klass: {other class}
+R15=0x00007ff891001000 is a thread
+
+
+Stack: [0x00007fff6b7ee000,0x00007fff6bfee000],  sp=0x00007fff6bfe7670,  free space=8165k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+J  com.google.appengine.repackaged.org.objectweb.asm.MethodWriter.visitInsn(I)V
