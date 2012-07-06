@@ -31,9 +31,10 @@ $(document).ready(function() {
             url: '/addPatient',
             data: $('#add-patient-form').serialize(),
             success: function(data){
-                alert(data);
-                var thankyou = Handlebars.compile(pa.patientSuccess);
-                $('#two .ui-content').replaceWith(thankyou);
+//                var thankyou = Handlebars.compile(pa.patientSuccess);
+//                $('#two .ui-content').replaceWith(thankyou);
+                $('#add-patient-form button[type="reset"]').click();
+                $('#dialog').click();
             }
         });
 
