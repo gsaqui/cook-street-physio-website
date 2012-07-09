@@ -218,12 +218,12 @@
             </button>
         </form>
 
-<a href="update" data-rel="dialog" data-transition="pop" id="dialog">Open dialog</a>
+
     </div>
     <!-- /content -->
 
     <div class="footer"></div>
-
+    <a href="update" data-rel="dialog" data-transition="pop" id="dialog">Open dialog</a>
 </div>
 <!-- /page two -->
 
