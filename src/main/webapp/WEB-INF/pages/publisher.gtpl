@@ -13,7 +13,5 @@
 </head>
 <body>
 <div ng-view></div>
-<h2>yo</h2>
-<h2>JavaScript Projects</h2>
 </body>
 </html>
