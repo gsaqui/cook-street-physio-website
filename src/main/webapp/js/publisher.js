@@ -23,10 +23,8 @@ angular.module('publisher', ['patients']).
 
 function ListCtrl($scope, Patient) {
     console.log('list controller');
-    $http.get('patientList').success(function(data) {
-        $scope.patients = data;
-  });
-//  $scope.projects = Patient.query();
+
+  $scope.patients = Patient.query();
 }
 
 

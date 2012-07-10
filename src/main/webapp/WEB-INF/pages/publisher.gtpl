@@ -12,24 +12,8 @@
   <script type="text/javascript" src="/js/publisher.js"></script>
 </head>
 <body>
+<div ng-view></div>
 <h2>yo</h2>
 <h2>JavaScript Projects</h2>
-<table>
-  <thead>
-  <tr>
-    <th>Project</th>
-    <th>Description</th>
-    <th><a href="#/new"><i class="icon-plus-sign"></i></a></th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr ng-repeat="patient in patients  | orderBy:'name'">
-    <td><a href="{{patient.name}}" target="_blank">{{patient.name}}</a></td>
-    <td>{{project.description}}</td>
-    <td>
-    </td>
-  </tr>
-  </tbody>
-</table>
 </body>
 </html>
